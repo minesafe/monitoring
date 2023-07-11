@@ -53,7 +53,7 @@ function initMap() {
   }).addTo(map);
 
   var customIcon = L.icon({
-  iconUrl: 'icon.png', // 
+  iconUrl: 'Icon.png', // 
   iconSize: [50, 50], // Ukuran icon
   // Tambahan properti opsional, seperti anchor dan popupAnchor jika diperlukan
 });
