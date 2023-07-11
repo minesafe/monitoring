@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: linear-gradient(
+    to bottom,
+    #87ceeb,
+    #1212c2
+  ); /* Adjust the colors as needed */
+  color: #fff; /* Set the text color to white for better visibility */
+}
+
+header {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+#clock {
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.header-image {
+  width: 60px; /* Adjust the width as needed */
+  height: 60px; /* Adjust the height as needed */
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 5px; /* Adjust the margin bottom as needed */
+}
+
+h1 {
+  color: #000000;
+  font-size: 18px;
+  margin-top: 0; /* Adjust the margin top as needed */
+}
+
+section {
+  margin-bottom: 20px;
+  height: 150px; /* Adjust the height as needed */
+  width: 200px; /* Adjust the width as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(255, 0, 0);
+  padding: 10px;
+  background-color: #3c9ce9; /* Add desired background color */
+  border-radius: 10px; /* Add border-radius for rounded corners */
+}
+
+section p {
+  font-size: 16px;
+  color: black; /* Ubah warna tulisan menjadi hitam */
+}
+
+h2 {
+  color: #f9bb01;
+}
+
+footer {
+  text-align: center;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 12px;
+}
+
+#map {
+  position: relative;
+  height: calc(100vh - 360px);
+  width: calc(100% - 40px);
+  margin: 0 20px 20px 20px;
+  overflow: hidden; /* Mengatur overflow menjadi hidden untuk menghilangkan tampilan di luar kotak */
+  border-radius: 10px; /* Menambahkan border-radius untuk membuat ujung maps menjadi lengkung */
+}
+
+#map::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  border-radius: 50%;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Ubah warna latar belakang sesuai keinginan */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}

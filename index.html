@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GPS Lokasi Alat, Deteksi Gas LPG, dan Detak Jantung</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"
+    />
+    <style>
+      body {
+        display: grid;
+        place-items: center;
+        height: 100vh;
+      }
+
+      section {
+        border: 1px solid rgb(255, 255, 255);
+        padding: 10px;
+        margin: 10px;
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <img src="LOGO.png" alt="Header Image" class="header-image" />
+        <h1>MINESAFE (Mining Industry Safety Enhanced)</h1>
+        <span id="clock"></span>
+        <!-- Tambahkan ini untuk menampilkan jam -->
+      </div>
+    </header>
+
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+
+    <script>
+      // Memanggil fungsi initMap saat halaman selesai diload
+      window.addEventListener("load", initMap);
+    </script>
+
+    <div class="container">
+      <section>
+        <h2>GPS Lokasi Alat</h2>
+        <p>Latitude: <span id="latitude">0.000000</span></p>
+        <p>Longitude: <span id="longitude">0.000000</span></p>
+      </section>
+
+      <section>
+        <h2>Deteksi Gas LPG</h2>
+        <p>Nilai: <span id="gasValue">163</span></p>
+      </section>
+
+      <section>
+        <h2>Detak Jantung</h2>
+        <p>Nilai: <span id="heartValue">0</span></p>
+      </section>
+    </div>
+
+    <footer>
+      <p>© 2023 MineSafe_PKM Karya Cipta</p>
+    </footer>
+
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
