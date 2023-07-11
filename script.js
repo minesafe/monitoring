@@ -53,8 +53,8 @@ function initMap() {
   }).addTo(map);
 
   var customIcon = L.icon({
-  iconUrl: 'icon.png', // Ganti dengan path yang sesuai ke ikon GPS baru
-  iconSize: [40, 40], // Ganti dengan ukuran ikon GPS baru
+  iconUrl: 'icon.png', // 
+  iconSize: [50, 50], // Ukuran icon
   // Tambahan properti opsional, seperti anchor dan popupAnchor jika diperlukan
 });
 
