@@ -41,7 +41,7 @@ heartRateRef.on("value", function (snapshot) {
   document.getElementById("heartValue").textContent = heartValue;
 });
 
-var maxZoomLevel = 18; // Zoom level maksimum yang diinginkan
+var maxZoomLevel = 20; // Zoom level maksimum yang diinginkan
 
 function initMap() {
   var map = L.map("map").setView([0, 0], 13);
