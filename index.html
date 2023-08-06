@@ -9,28 +9,8 @@
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"
     />
-    <style>
-      body {
-        display: grid;
-        place-items: center;
-        height: 100vh;
-      }
-
-      section {
-        border: 1px solid rgb(255, 255, 255);
-        padding: 10px;
-        margin: 10px;
-      }
-
-      .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-      }
-    </style>
   </head>
+  
   <body>
     <header>
       <div class="header-content">
@@ -52,7 +32,7 @@
 
     <div class="container">
       <section>
-        <h2>GPS Lokasi Alat</h2>
+        <h2>Koordinat</h2>
         <p>Latitude: <span id="latitude">0.000000</span></p>
         <p>Longitude: <span id="longitude">0.000000</span></p>
       </section>
@@ -72,6 +52,7 @@
       <p>© 2023 MineSafe_PKM Karya Cipta</p>
     </footer>
 
+    
     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
     <script src="script.js"></script>
