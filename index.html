@@ -5,48 +5,82 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"
-    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   </head>
   
   <body>
-    <header>
-      <div class="header-content">
+    <div class="main">
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="simbol">
         <img src="LOGO.png" alt="Header Image" class="header-image" />
-        <h1>MINESAFE (Mining Industry Safety Enhanced)</h1>
-        <span id="clock"></span>
-        <!-- Tambahkan ini untuk menampilkan jam -->
+        <a href="#" class="logo">MINESAFE</a>
       </div>
-    </header>
+      <span id="clock"></span>
+    </div>
+        <!-- End of Navbar -->
 
-    <div id="map"></div>
-
+     <div id="map"></div>
     <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-
     <script>
       // Memanggil fungsi initMap saat halaman selesai diload
       window.addEventListener("load", initMap);
     </script>
 
-    <div class="container">
-      <section>
-        <h2>Koordinat</h2>
-        <p>Latitude: <span id="latitude">0.000000</span></p>
-        <p>Longitude: <span id="longitude">0.000000</span></p>
-      </section>
+     <!-- Get Stearted -->
+        <div class="get-started">
+          <p class="header">LOKASI DAN INFORMASI</p>
+          <p class="info-text">Berikut merupakan informasi yang didapat oleh MINESAFE</p>
+          <div class="items-box">
+              <div class="item-container">
+                  <div class="item">
+                    <i class='bx bx-current-location'></i>
+                  </div>
+                  <h2>Koordinat</h2>
+                  <p>Latitude,Longitude:</p>
+                    <p><span id="latitude">0.000000</span>,<span id="longitude">0.000000</span></p>
+                  
+              </div>
+              <div class="item-container">
+                  <div class="item">
+                    <i class='bx bxs-radiation' ></i>
+                  </div>
+                  <h2>Deteksi Gas</h2>
+                  <p>Nilai: <span id="gasValue">163</span></p>
+              </div>
+              <div class="item-container">
+                  <div class="item">
+                    <i class='bx bx-heart-circle'></i>
+                  </div>
+                  <h2>Detak Jantung</h2>
+                  <p>Nilai: <span id="heartValue">0</span></p>
+              </div>
+              
+          </div>
+      </div>
 
-      <section>
-        <h2>Deteksi Gas</h2>
-        <p>Nilai: <span id="gasValue">163</span></p>
-      </section>
+      <!-- Top Container -->
+          <div class="top-container">
+            <div class="info-box">
+                <p class="header">
+                    MINESAFE 
+                </p>
+                <p class="middle">
+                  (Mining Industry Safety Enhanced)
+                </p>
+                <p class="info-text">
+                  Masalah dan tantangan yang dihadapi oleh pekerja tambang tersebut mendorong munculnya sebuah ide dalam bentuk alat. “MINESAFE (Mining Industry Safety Enhanced) - A Vest with an Integrated Poisonous Gas Detection System” merupakan sebuah rancang bangun dengan sistem pendeteksi gas beracun, detak jantung pekerja tambang dan keberadaan dari pekerja tambang yang menggunakan alat tersebut. Fokus utama dari alat ini adalah mendeteksi gas beracun dan detak jantung pekerja tambang ketika berada di area tambang. Alat ini dipasang pada rompi pekerja tambang untuk memonitor tingkat paparan gas beracun, detak jantung, dan lokasi pekerja saat berada di area tambang. Alat tersebut terhubung dengan base station menggunakan teknologi LORA meskipun tidak terjangkau oleh internet.
+                </p>
+            </div>
 
-      <section>
-        <h2>Detak Jantung</h2>
-        <p>Nilai: <span id="heartValue">0</span></p>
-      </section>
+            <div class="nft-box">
+                <img src="team.jpeg" class="nft-pic">
+            </div>
+        </div>
+    <!-- End of Top Container -->
     </div>
+      <!-- End of Get Started -->
 
     <footer>
       <p>© 2023 MineSafe_PKM Karya Cipta</p>

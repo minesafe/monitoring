@@ -32,6 +32,9 @@ gasRef.on("value", function (snapshot) {
 
   document.getElementById("gasValue").textContent = gasValue;
 });
+if (gasValue>100){
+  window.alert('Value is greater than 500!');
+}
 
 // Mendapatkan nilai detak jantung
 const heartRateRef = database.ref("heartRate");
